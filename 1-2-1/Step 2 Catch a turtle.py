@@ -17,7 +17,9 @@ tri.shapesize(10)
 def tri_clicked(x,y):
     print("tri_clicked!")
     change_position()
-
+    new_xpos = x
+    new_ypos = y
+    tri.goto(new_xpos, new_ypos)
 def change_position():
     x = rand.randint(1,400)
     y = rand.randint(1,300)
