@@ -70,6 +70,7 @@ def update_leaderboard(file_name, leader_names, leader_scores, player_name, play
 
     # TODO 10: insert new player and score
 
+
     # TODO 11: keep both lists at 5 elements only (top 5 players)
 
     # TODO 12: store the latest leaderboard back in the file
