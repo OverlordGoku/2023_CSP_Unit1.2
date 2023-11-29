@@ -3,6 +3,7 @@
 import turtle as trtl
 import random as rand
 import leaderboard as lb
+wn = trtl.Screen()
 
 message = "~~~~~"
 # -----game configuration-----
