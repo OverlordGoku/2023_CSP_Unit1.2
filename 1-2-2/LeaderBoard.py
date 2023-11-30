@@ -85,7 +85,7 @@ def update_leaderboard(file_name, leader_names, leader_scores, player_name, play
     leaderboard_file = open(file_name, "w")  # this mode opens the file and erases its contents for a fresh start
   
     # TODO 13 loop through all the leaderboard elements and write them to the the file
-    for index in range  :
+    for index in range :
       leaderboard_file.write(leader_names[index] + "," + str(leader_scores[index]) + "\n")
   
     leaderboard_file.close()
