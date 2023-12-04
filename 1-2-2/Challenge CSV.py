@@ -22,22 +22,21 @@ Good luck - you have the period!
 '''
 
 # Initial set of CSV values
-csv ="KingsIndian,QueensGambit,TheColle,TheFrench,TheFriedLiver,TheFourKnights"
+csv ="KingsIndian,QueensGambit,TheColle,TheFrench,TheFriedLiver,TheFourKnights,"
 index = 0
 myValues = []
-
+val = ""
 
 #Do Part 1 of the challenge below here
 for index in range(len(csv)):
-    if (csv[index] != "-"):
-        csv += csv[index]
-        index = index+1
-        csv.append(index)
+    if (csv[index] != ","):
+        val += csv[index]
 
 
 else:
-
+    myValues.append(val)
+    val = ""
 
 #Do part 2 of the challenge below here
-for print in range():
-    print(index + ("-") + csv)
+for index in range(len(myValues)):
+    print(str(index) + " - " + myValues[index])
