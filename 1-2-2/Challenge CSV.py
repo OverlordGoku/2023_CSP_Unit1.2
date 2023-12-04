@@ -29,14 +29,13 @@ myValues = []
 
 #Do Part 1 of the challenge below here
 for index in range(len(csv)):
-    csv += csv[index]
-    index = index+1
-    csv.append(index)
+    if (csv[index] != "-"):
+        csv += csv[index]
+        index = index+1
+        csv.append(index)
 
-break
 
-
-else
+else:
 
 
 #Do part 2 of the challenge below here
