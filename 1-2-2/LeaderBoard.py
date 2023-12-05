@@ -117,8 +117,8 @@ def draw_leaderboard(high_scorer, leader_names, leader_scores, turtle_object, pl
 
     # TODO 14: display message about player making/not making leaderboard
 
-      turtle_object.write("Congratulations!\nYou made the leaderboard!", font=font_setup)
-      turtle_object.write("Sorry!\nYou didn't make the leaderboard.\nMaybe next time!", font=font_setup)
+    turtle_object.write("Congratulations!\nYou made the leaderboard!", font=font_setup)
+    turtle_object.write("Sorry!\nYou didn't make the leaderboard.\nMaybe next time!", font=font_setup)
 
 
     # move turtle to a new line
@@ -128,6 +128,6 @@ def draw_leaderboard(high_scorer, leader_names, leader_scores, turtle_object, pl
 
     # TODO 15: Display a gold/silver/bronze message if player earned a gold/silver/or bronze medal; display nothing if no medal
 
-      turtle_object.write("You earned a gold medal!", font=font_setup)
-      turtle_object.write("You earned a silver medal!", font=font_setup)
-      turtle_object.write("You earned a bronze medal!", font=font_setup)
+    turtle_object.write("You earned a gold medal!", font=font_setup)
+    turtle_object.write("You earned a silver medal!", font=font_setup)
+    turtle_object.write("You earned a bronze medal!", font=font_setup)
