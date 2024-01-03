@@ -20,10 +20,13 @@ def drawSpiral():
         wall_len += path_width
 
         if (w > 4):
+            randomNum =rand.randint(0,1)
             maze_painter.left(90)
 
-            draw_door()
+            if randomNum == 1:
 
+            draw_door()
+        else:
             draw_barrier()
 
             # a common error for the student to make is not to
