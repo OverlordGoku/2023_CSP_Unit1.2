@@ -8,7 +8,7 @@ def up():
         runner.forward(10)
 
 
-    up()
+up()
 
 
 
