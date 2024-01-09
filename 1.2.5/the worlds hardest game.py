@@ -1,7 +1,7 @@
 import turtle as trtl
 wn = trtl.Screen()
 runner = trtl.Turtle
-
+wn.bgpic("background.gif")
 runner.penup()
 
 #keypress
