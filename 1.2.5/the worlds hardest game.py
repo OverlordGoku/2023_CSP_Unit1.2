@@ -4,6 +4,7 @@ runner = trtl.Turtle
 
 runner.penup()
 
+#keypress
 def w():
     runner.forward(45)
 
@@ -18,29 +19,13 @@ def d():
 
 
 
-#Listen For Key Press
+#listen for keypress
 wn.onkeypress(w, "Up")
 wn.onkeypress(s, "down")
 wn.onkeypress(a, "Left")
 wn.onkeypress(d, "Right")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-wn = trtl.Screen()
+wn.listen()
 wn.mainloop()
 
