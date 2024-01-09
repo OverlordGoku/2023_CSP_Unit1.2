@@ -1,18 +1,42 @@
 import turtle as trtl
-
+wn = trtl.Screen()
 runner = trtl.Turtle
 
-wn.bigpic("background.gif")
+runner.penup()
+
+def w():
+    runner.forward(45)
+
+def s():
+    runner.back(45)
+
+def a():
+    runner.left(45)
 
 def d():
-    if wn.onkeypress(D,"d"):
-        runner.forward(90)
+    runner.right(45)
+
+
+
+#Listen For Key Press
+wn.onkeypress(w, "Up")
+wn.onkeypress(s, "down")
+wn.onkeypress(a, "Left")
+wn.onkeypress(d, "Right")
 
 
 
 
 
-d()
+
+
+
+
+
+
+
+
+
 
 
 
