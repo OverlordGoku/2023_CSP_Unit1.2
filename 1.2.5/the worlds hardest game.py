@@ -1,8 +1,15 @@
 import turtle as trtl
 wn = trtl.Screen()
 runner = trtl.Turtle
-wn.bgpic("background.gif")
+box = trtl.Turtle
+wn.bgpic("bg2.gif")
+
+
 runner.penup()
+
+#box turtle setup
+box.shape(box="square")
+
 
 #keypress
 def w():
@@ -20,10 +27,10 @@ def d():
 
 
 #listen for keypress
-wn.onkeypress(w, "Up")
-wn.onkeypress(s, "down")
-wn.onkeypress(a, "Left")
-wn.onkeypress(d, "Right")
+wn.onkeypress(w, "w")
+wn.onkeypress(s, "s")
+wn.onkeypress(a, "a")
+wn.onkeypress(d, "d")
 
 
 wn.listen()
