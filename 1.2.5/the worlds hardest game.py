@@ -13,33 +13,41 @@ runner.forward(420)
 runner.right(180)
 
 #box setup
+box.penup()
 box.shape("square")
-box.color("red")
 box.shapesize(5)
-box.left(180)
-box.forward(100)
-box.right(90)
-box.forward(130)
+box.goto(400, -50)
 
 
 #keypress
 def w():
-        runner.forward(45)
-
+    runner.forward(20)
+    win()
 def s():
-    runner.back(45)
-
+    runner.back(20)
+    win()
 def a():
     runner.left(45)
-
+    win()
 def d():
     runner.right(45)
+    win()
 
+#Game win event
 
-#box movement
-for movement in range(10000):
-    box.right(180)
-    box.forward(300)
+def win():
+    if runner.xcor() >= 400:
+        print("you win")
+
+    if runner.ycor() >= -50:
+        print("you win")
+
+#Game lose event
+def lose():
+    if runner.xcor() <= 400:
+        print("you lose")
+    if runner.ycor() <= -50:
+        print("you lose")
 
 
 #listen for keypress
