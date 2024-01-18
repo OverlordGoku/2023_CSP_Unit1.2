@@ -43,6 +43,8 @@ def win():
         print("you win")
 
 
+#Game lose event
+
 
 #listen for keypress
 wn.onkeypress(w, "w")
