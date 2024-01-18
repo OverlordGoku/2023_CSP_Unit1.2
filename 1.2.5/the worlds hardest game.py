@@ -39,15 +39,9 @@ def win():
     if runner.xcor() >= 400:
         print("you win")
 
-    if runner.ycor() >= -50:
+    if runner.ycor() >= 20:
         print("you win")
 
-#Game lose event
-def lose():
-    if runner.xcor() <= 400:
-        print("you lose")
-    if runner.ycor() <= -50:
-        print("you lose")
 
 
 #listen for keypress
